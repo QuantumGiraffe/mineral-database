@@ -9,51 +9,8 @@
 }
 
 
-
-
-
-
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-.carousel{
-  overflow: hidden;
-}
-
-.inner {
-  white-space: nowrap;
-  transition: transform 0.3s;
-}
-
-.carousel-item {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  background-color: green;
-  color: rgb(202, 18, 18);
+.Carousel-viewport {
+  /* border: 3px solid red; */
+  margin-left:22.5%;
+  width: 55%;
 }

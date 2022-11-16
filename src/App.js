@@ -11,18 +11,14 @@ function App() {
      
 
 
-     <div>
+     <div className='Carousel-viewport'>
       <br></br>
       <h3>-Carousel goes here-</h3>
-
-
       <Carousel>
         <CarouselItem>Item 1</CarouselItem>
         <CarouselItem>Item 2</CarouselItem>
         <CarouselItem>Item 3</CarouselItem>
       </Carousel>
-
-      
      </div>
 
      <div>

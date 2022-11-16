@@ -6,11 +6,9 @@ import '../Carousel.css';
 // This component will be used to render the items themselves 
 export const CarouselItem = ({ children, width }) => {
     return (
-        
             <div className="carousel-item" style={{ width: width }}>
                 {children}
             </div> 
-        
     );
 };
 
