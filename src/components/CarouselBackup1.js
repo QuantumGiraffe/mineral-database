@@ -17,16 +17,6 @@ const Carousel = ({ children }) => {
     // creating a state-setter here that will be used to update the TranslateX value 
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const updateIndex = (newIndex) => {
-        if (newIndex < 0) {
-           newIndex = 0;
-        } else if (newIndex >= React.Children.count(children)) {
-            newIndex = React.Children.count(children) - 1;
-        }
-
-     setActiveIndex(newIndex);
-    }
-
     return (
        <div className="carousel">
 
