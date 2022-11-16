@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import '../Carousel.css';
 
@@ -17,45 +17,18 @@ const Carousel = ({ children }) => {
     // creating a state-setter here that will be used to update the TranslateX value 
     const [activeIndex, setActiveIndex] = useState(0);
 
-
-    // We want to make a state that tracks when the user hovers over the carousel, and if they do, pause it 
-    const [paused, setPaused] = useState(false);
-
-    // we need to update this so that when it gets to the last slide, it goes to the first (and vice versa)
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
-           newIndex = React.Children.count(children) - 1;
+           newIndex = 0;
         } else if (newIndex >= React.Children.count(children)) {
-            newIndex = 0;
+            newIndex = React.Children.count(children) - 1;
         }
 
      setActiveIndex(newIndex);
     }
 
-
-    // Now we can add some code to make it auto-cycle
-    // useEffect initializes the interval
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (!paused) {
-                updateIndex(activeIndex + 1);
-            }
-            // this updates updateIndex every 5 seconds
-        }, 1000);
-
-        return () => {
-            if (interval) {
-                clearInterval(interval)
-            }
-        }
-    })
-
     return (
-       <div 
-       className="carousel"
-       onMouseEnter={() => setPaused(true)}
-       onMouseLeave={() => setPaused(false)}
-       >
+       <div className="carousel">
 
            {/* When the translateX value is updated, the slides change! */}
            <div 
