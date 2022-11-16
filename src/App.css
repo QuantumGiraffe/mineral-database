@@ -10,7 +10,8 @@
 
 
 .Carousel-viewport {
-  /* border: 3px solid red; */
-  margin-left:22.5%;
-  width: 55%;
+  border: 3px solid red;
+
+  /* margin-left:22.5%;
+  width: 55%; */
 }

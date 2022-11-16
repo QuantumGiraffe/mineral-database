@@ -12,7 +12,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    height: 300px;
   
     background-color: green;
     color: #fff;
@@ -37,3 +37,17 @@
 button{
     height: 100px;
 }
+
+
+.Carousel-img {
+    width: 300px;
+    border: 10px solid red;
+}
+
+/* .carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    border: 10px solid #3A4928;
+
+        max-width: 800px;
+} */

@@ -44,7 +44,7 @@ const Carousel = ({ children }) => {
                 updateIndex(activeIndex + 1);
             }
             // this updates updateIndex every 5 seconds
-        }, 10000);
+        }, 100000);
 
         return () => {
             if (interval) {
